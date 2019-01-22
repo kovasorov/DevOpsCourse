@@ -9,7 +9,7 @@
 ```bash
 uname -a
 cat /etc/issue
-cat /etc/os-release 
+cat /etc/os-release
 
 date
 uptime
@@ -17,10 +17,10 @@ uptime
 who
 w
 
-cat /proc/cpuinfo 
+cat /proc/cpuinfo
 lsblk
 dmesg | grep virt
-cat /proc/cpuinfo 
+cat /proc/cpuinfo
 
 free -m
 
@@ -50,7 +50,7 @@ mc
 mkdir -m a=rwx test6
 ls -al
 for i in {1..6}; do echo $i >> 1.txt; done
-cat 1.txt 
+cat 1.txt
 cat 1.txt | xargs -L 1 mkdir
 ls -al
 touch demo1.txt
@@ -63,17 +63,17 @@ updatedb
 locate demo1.txt
 sudo updatedb
 locate demo1.txt
-tar -cvzf file.tar.gz file.txt 
+tar -cvzf file.tar.gz file.txt
 ls -al
-tar -tf file.tar.gz 
+tar -tf file.tar.gz
 ls -i
 df -hTi
 nano 1.txt
 nano 3.txt
 nano 4.txt
-diff 3.txt 4.txt 
+diff 3.txt 4.txt
 echo 'hello world' >> 4.txt
-diff 3.txt 4.txt 
+diff 3.txt 4.txt
 ps -a
 ps -aux
 htop
@@ -90,20 +90,20 @@ source /etc/network/interfaces.d/*
 ls /etc/network/interfaces.d/
 ls /etc/network/
 netstat -tupln
-cat /etc/services 
-cat /etc/protocols 
+cat /etc/services
+cat /etc/protocols
 netstat -tupln
 sudo netstat -tupln
 sudo apt install nmap
 exit
-nginx 
+nginx
 exit
 ls -al
 cd /
 ls -a
 cd ~
-скрипт должен раз в день генерировать непустые файлы
-iotop
+
+
 sudo apt install iotop
 iotop
 sudo iotop
