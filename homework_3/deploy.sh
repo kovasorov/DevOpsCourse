@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# war-файл в каталог Tomcat, рестарт
+#
+# запуск - sudo deploy.sh
+
+Deploy_dir=$HOME/Dropbox/Projects/devops/homework_3/deploy
+
+# копируем war-файл, рестарт Tomcat
+cp $Deploy_dir/*.war /var/lib/tomcat8/webapps/
+service tomcat8 restart
