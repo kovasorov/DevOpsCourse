@@ -1,6 +1,7 @@
 # 1 pc
 
-'''Bash   54  sudo apt install postgresql
+```Bash
+   54  sudo apt install postgresql
    55  su postgres
    56  su 
    57  su postgres
@@ -44,11 +45,12 @@
    95  sudo -u postgres psql
    96  exit
    97  netstat -tupln
-'''
+```
 
 # 2 pc
 
-'''Bash    2  sudo apt full-upgrade 
+```Bash
+    2  sudo apt full-upgrade 
     3  su postgres
     4  sudo apt install postgresql
     5  su postgres
@@ -123,4 +125,4 @@
    74  htop
    75  sudo reboot
    76  history
-'''
+```
