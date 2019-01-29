@@ -2,7 +2,9 @@
 
 Доделать дома репликацию master-slave, у кого не получилось на занятии, после этого добавить еще один слэйв в эту систему.
 
-## 1 pc
+## Команды, вводимые на занятии
+
+### 1 pc
 
 ```Bash
    54  sudo apt install postgresql
@@ -51,7 +53,7 @@
    97  netstat -tupln
 ```
 
-## 2 pc
+### 2 pc
 
 ```Bash
     2  sudo apt full-upgrade 
