@@ -2,7 +2,7 @@
 
 ## Упаковка приложения в Docker
 
-Сделать сборку Java-приложения из [ДЗ-3](..//homework-03/) в Docker контейнере.
+Сделать сборку Java-приложения из [ДЗ-3](https://github.com/kovasorov/DevOpsCourse/tree/master/homework_03) в Docker контейнере.
 
 ## Команды, вводимые на занятии
 
