@@ -1,7 +1,7 @@
 #
 # билд контейнера - docker build --build-arg REPO=GitHUB_URL -t container_name -f add.dockerfile .
 # запуск контейнера - docker run -it --rm -p port:8080 container_name
-# просмотр результата - http://localhost:port/hello-1.0/
+# просмотр результата - http://localhost:port/app_name/
 #
 
 # клонирование и сборка проекта
