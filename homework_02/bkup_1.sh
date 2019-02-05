@@ -6,6 +6,6 @@
 #                               crontab -e
 #                                   30 23 * * * bkup_1.sh
 
-Wrk_Dir=$HOME/Projects/devops/homework_2/logs
+Wrk_Dir=$HOME/Projects/devops/homework_02/logs
 
 base64 /dev/urandom | head -c 100K > $Wrk_Dir/$(date +%d%m%y).log
