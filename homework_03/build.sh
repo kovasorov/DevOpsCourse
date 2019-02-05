@@ -3,8 +3,8 @@
 # cборка приложения с помощью maven и копирование war-файла на хост с Tomcat
 #
 
-Build_Dir=$HOME/Projects/devops/homework_3/build
-Deploy_Dir=oleg@192.168.1.3:/home/Projects/devops/homework_3/deploy
+Build_Dir=$HOME/Projects/devops/homework_03/build
+Deploy_Dir=oleg@192.168.1.3:/home/Projects/devops/homework_03/deploy
 Repo_name=boxfuse-sample-java-war-hello
 
 # переходим в каталог сборки и клонируем репозиторий
