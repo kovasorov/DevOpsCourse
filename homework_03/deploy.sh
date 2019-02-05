@@ -4,7 +4,7 @@
 #
 # запуск - sudo deploy.sh
 
-Deploy_dir=$HOME/Projects/devops/homework_3/deploy
+Deploy_dir=$HOME/Projects/devops/homework_03/deploy
 
 # копируем war-файл, рестарт Tomcat
 cp $Deploy_dir/*.war /var/lib/tomcat8/webapps/
