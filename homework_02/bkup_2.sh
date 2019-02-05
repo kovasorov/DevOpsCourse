@@ -6,9 +6,9 @@
 #
 
 # откуда
-Source_Dir=oleg@192.168.1.3:/home/Projects/devops/homework_2/logs/
+Source_Dir=oleg@192.168.1.3:/home/Projects/devops/homework_02/logs/
 # куда
-Bkup_Dir=$HOME/Projects/devops/homework_2/bkup
+Bkup_Dir=$HOME/Projects/devops/homework_02/bkup
 
 # синхронизация
 rsync -avzu $Source_Dir $Bkup_Dir
