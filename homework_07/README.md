@@ -4,7 +4,12 @@
 
 Сделать дополнительное [ДЗ-6](https://github.com/kovasorov/DevOpsCourse/tree/master/homework_06) с помощью docker-compose.
 
+### Сборка и запуск
+
+```Shell
 docker-compose build --build-arg REPO=GitHub_Url
+docker-compose up -d
+```
 
 ## Команды, вводимые на занятии
 
