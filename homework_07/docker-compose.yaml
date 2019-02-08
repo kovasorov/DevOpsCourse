@@ -1,0 +1,15 @@
+version: '3'
+services:
+  maven:
+    build:
+      context: .
+      args:
+        - REPO
+    volumes:
+      - ./war:/prj/target/
+  tomcat:
+    image: tomcat:8-jre8-slim
+    volumes:
+      - ./war:/usr/local/tomcat/webapps/
+    ports:
+      - "8080:8080"
