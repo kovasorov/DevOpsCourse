@@ -1,0 +1,134 @@
+---
+organization:
+  departments:
+    1:
+      - employees:
+          - Olga_01:
+              name: Olga Erofeeva
+              position: accountant
+              salary: 200
+              age: 30
+          - Olga_02:
+              name: Olga Chernobrovina
+              position: accountant
+              salary: 200
+              age: 30
+          - Olga_03:
+              name: Olga Bebchuk
+              position: accountant
+              salary: 200
+              age: 30
+          - Olga_04:
+              name: Olga Pirogova
+              position: accountant
+              salary: 250
+              age: 30
+          - Dmitry_01:
+              name: Dmitrij Golubkin
+              position:
+              salary: 300
+              age: 30
+          - Dmitry_02:
+              name: Dmitrij Buklin
+              position:
+              salary: 210
+              age: 30
+          - Dmitry_03:
+              name: Dmitrij Serov
+              position:
+              salary: 220
+              age: 30
+          - Ivan_01:
+              name: Ivan Zadornov
+              position:
+              salary: 290
+              age: 30
+          - Ivan_02:
+              name: Ivan Nechaev
+              position:
+              salary: 190
+              age: 30
+    2:
+      - employees:
+          - Roman_01:
+              name: Roman Pechkin
+              position: jurist
+              salary: 100
+              age: 28
+          - Roman_02:
+              name: Roman Pirozhkov
+              position: jurist
+              salary: 100
+              age: 25
+          - Roman_03:
+              name: Roman Denisov
+              position: jurist
+              salary: 100
+              age: 29
+          - Roman_04:
+              name: Roman Gorohin
+              position: jurist
+              salary: 100
+              age: 21
+          - Maxim_01:
+              name: Maksim Hamidullin
+              position: driver
+              salary: 100
+              age: 24
+          - Maxim_02:
+              name: Maksim Kuzmin
+              position: driver
+              salary: 100
+              age: 22
+    3:
+      - employees:
+          - Olga_01:
+            name: Olga Tyushnyakova
+            position: jurist
+            salary: 100
+            age: 30
+          - Nikolay_01:
+              name: Nikolaj Mosin
+              position: builder
+              salary: 100
+              age: 30
+          - Ivan_01:
+              name: Ivan Babikov
+              position: builder
+              salary: 100
+              age: 30
+    4_5:
+      - employees:
+          - Julia_01:
+              name: Yuliya Grigolyuk
+              position: clerk
+              salary: 200
+              age: 31
+          - Julia_02:
+              name: Yuliya Aleeva
+              position: clerk
+              salary: 200
+              age: 32
+          - Julia_03:
+              name: Yuliya Goreva
+              position: clerk
+              salary: 200
+              age: 32
+          - Julia_04:
+              name: Yuliya Schastlivceva
+              position: clerk
+              salary: 200
+              age: 33
+          - Julia_05:
+              name: Yuliya Reshetilova
+              position: clerk
+              salary: 200
+              age: 32
+    6:
+      - employees:
+          - IV:
+              name: Igor Viktorovich
+              position: director of security
+              salary: 1000
+              age: 59
+---
