@@ -1,3 +1,4 @@
+---
 - name: Clone Repo, Build with maven and Deploy to Tomcat
   hosts: java
   tasks:

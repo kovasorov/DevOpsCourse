@@ -4,6 +4,12 @@
 
 Выполнить сборку и деплой приложения из [ДЗ-3](https://github.com/kovasorov/DevOpsCourse/tree/master/homework_03) с помощью Ansible.
 
+### Команда для запуска плейбука
+
+```Shell
+ansible-playbook --ask-become-pass maven-tomcat.yaml
+```
+
 ## Дополнительное задание
 
 Структурировать текст в Yaml.
