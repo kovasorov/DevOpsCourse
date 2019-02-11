@@ -1,0 +1,34 @@
+- name: Clone Repo, Build with maven and Deploy to Tomcat
+  hosts: java
+  tasks:
+    - name: Check if git, java, maven and tomcat are installed
+      become: 'yes'
+      apt:
+        name: "{{ packages }}"
+        state: present
+      vars:
+        packages:
+          - default-jdk
+          - git
+          - maven
+          - tomcat8
+    - name: Clone Repo
+      git:
+        repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
+        dest: /tmp/prj
+        clone: 'yes'
+    - name: Build Project by Maven
+      command: mvn package
+      args:
+        chdir: /tmp/prj
+    - name: Copy *.war to Tomcat Folder
+      become: 'yes'
+      copy:
+        src: /tmp/prj/target/hello-1.0.war
+        dest: /var/lib/tomcat8/webapps/
+        remote_src: 'yes'
+    - name: Restart Tomcat
+      become: 'yes'
+      service:
+        name: tomcat8
+        state: restarted
