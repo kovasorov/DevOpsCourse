@@ -1,0 +1,13 @@
+- name: ensure apache2 package is installed
+  apt: name=apache2 state=present
+  when: ansible_os_family == "Debian"
+
+- name: ensure httpd package is installed
+  yum: name=httpd state=present
+  when: ansible_os_family == "RedHat"
+  notify: Restart httpd
+
+
+  Handlers:
+  - name: Restart httpd
+    service: name=httpd state=restarted
