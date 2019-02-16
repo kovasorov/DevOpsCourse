@@ -6,23 +6,12 @@
         name: tomcat8
         state: present
 
-- name: Copy from build server to deploy server
-  hosts: "{{groups['build'][0]}}"
-  user: devops
+- name: copy war from master to tomcat
   become: 'yes'
-#  shell: scp devops@192.168.1.106:/tmp/prj/target/hello-1.0.war /tmp
-#; cp ~/hello-1.0.war /var/lib/tomcat8/webapps/
-  synchronize:
-        src: /tmp/prj/target/hello-1.0.war
-        dest: /var/lib/tomcat8/webapps/
-        mode: pull
-  delegate_to: "{{groups['deploy'][0]}}"
-
-#  synchronize:
-#    mode: pull
-#    src: rsync://devops@192.168.1.106:/tmp/prj/target/hello-1.0.war
-#    dest: /var/lib/tomcat8/webapps/
-#  delegate_to: localhost
+  copy:
+    src: ./hello-1.0.war
+    dest: /var/lib/tomcat8/webapps/
+    remote_src: 'no'
 
 - name: Restart Tomcat
   become: 'yes'

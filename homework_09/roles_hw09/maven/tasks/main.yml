@@ -10,3 +10,9 @@
   command: mvn package
   args:
     chdir: /tmp/prj
+
+- name: Copy war to master
+  fetch:
+    src: /tmp/prj/target/hello-1.0.war
+    dest: ./
+    flat: yes
