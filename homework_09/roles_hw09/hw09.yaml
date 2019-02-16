@@ -1,0 +1,15 @@
+---
+  - name: git clone and build project by maven
+    hosts: build
+    become: yes
+
+    roles:
+      - common
+      - maven
+
+  - name: deploy project to tomcat
+    hosts: deploy
+    become: yes
+
+    roles:
+      - tomcat

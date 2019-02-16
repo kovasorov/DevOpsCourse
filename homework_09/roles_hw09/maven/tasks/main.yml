@@ -1,0 +1,12 @@
+---
+# tasks file for maven
+- name: Clone Repo
+  git:
+    repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
+    dest: /tmp/prj
+    clone: 'yes'
+
+- name: Build Project by Maven
+  command: mvn package
+  args:
+    chdir: /tmp/prj

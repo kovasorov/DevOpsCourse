@@ -1,0 +1,10 @@
+---
+# tasks file for common
+- name: install git, java and maven
+  apt:
+    name: "{{ item }}"
+    state: installed
+  with_items:
+    - default-jdk
+    - git
+    - maven
