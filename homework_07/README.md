@@ -11,6 +11,10 @@ docker-compose build --build-arg REPO=GitHub_Url
 docker-compose up -d
 ```
 
+## Запись занятия
+
+[Занятие 7](https://meet76231018.adobeconnect.com/psom3e3vscay/)
+
 ## Команды, вводимые на занятии
 
 ```Shell

@@ -7,8 +7,12 @@
 ### Команда для запуска плейбука
 
 ```Shell
-ansible-playbook --ask-become-pass 
+ansible-playbook --ask-become-pass
 ```
+
+## Запись занятия
+
+[Занятие 9](https://meet76231018.adobeconnect.com/p0qqqakolryp/)
 
 ## Файлы с занятия
 

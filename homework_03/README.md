@@ -12,6 +12,10 @@
 
 Исходный код, можно использовать с [занятия](https://github.com/boxfuse/boxfuse-sample-java-war-hello).
 
+## Запись занятия
+
+[Занятие 3](https://meet76231018.adobeconnect.com/prp15w00uakz/)
+
 ## Команды, вводимые на занятии
 
 ```Bash
