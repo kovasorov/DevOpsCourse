@@ -3,21 +3,20 @@ pipeline {
         label 'devopseng1'
     }
     stages {
-        stage ('git') {
+        stage ('git clone') {
             steps {
             git 'https://github.com/kovasorov/nwrp.git'
             }
         }
-        stage ('build') {
+        stage ('build maven') {
             steps {
                 sh 'mvn package'
             }
         }
-        stage ('deploy') {
+        stage ('deploy *.war to Tomcat') {
             steps {
-                sh 'scp /tmp/workspace/df/target/hello-1.0.war devops@192.168.1.107:/tmp'
+                sh 'scp /tmp/workspace/df/target/hello-1.0.war devops@192.168.1.107:/var/lib/tomcat8/webapps/'
             }
         }
-
     }
 }
