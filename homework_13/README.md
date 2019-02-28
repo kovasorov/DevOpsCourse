@@ -16,7 +16,6 @@ aws configure
 ll ~/.aws
 cat ~/.aws/config
 
-aws ec2 deescribe-instances
 aws ec2 describe-instances
 aws s3 mb s3://mybacketqwerty.test.com
 
