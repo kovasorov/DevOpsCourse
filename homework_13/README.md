@@ -8,6 +8,10 @@
 
 [Занятие 13](https://meet76231018.adobeconnect.com/p1d6798tdhjx/)
 
+## Файлы с занятия
+
+[Playbook](https://github.com/kovasorov/DevOpsCourse/tree/master/homework_13/Playbook)
+
 ## Команды, вводимые на занятии
 
 ```Shell
