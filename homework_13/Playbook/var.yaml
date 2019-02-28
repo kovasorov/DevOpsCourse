@@ -1,0 +1,8 @@
+aws_access_key: < paste >
+aws_secret_key: < paste >
+key_name: my-key
+aws_region: eu-north-1
+vpc_id: < paste >
+ami_id: ami-0bc14f75
+instance_type: t2.micro
+my_local_cidr_ip: 
