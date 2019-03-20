@@ -1,0 +1,25 @@
+---
+- name: clone, build
+  hosts: java
+  tasks:   
+    - name: Install a list of packages
+      become: 'yes'
+      apt:
+        name: "{{ packages }}"
+        state: present
+      vars:
+        packages:
+          - git
+          - default-jdk
+          - maven  
+
+    - name: clone repo
+      git:
+        repo: 'https://github.com/venkaDaria/puzzle15.git'
+        dest: /tmp/puzzle15
+        clone: 'yes'
+
+    - name: build with maven
+      command: mvn package
+      args:
+        chdir: /tmp/puzzle15
